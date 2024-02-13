@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./NavBar";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Projects from "./pages/Projects";
+import AddProject from "./pages/AddProject";
+import {Route, Routes} from "react-router-dom";
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+      <div>
+        
+        <div className="container">
+          <div className="val-img"></div>
+
+          <div className="intro-paragraph">
+            <h1>
+              Full-Stack Developer{' '}
+              <img
+                src={`${process.env.PUBLIC_URL}/img/waveHand.png`}
+                alt=""
+              />
+            </h1>
+            
+            <p>
+              Hi, I'm Valentin Petrov. I code for over 5 years now.<br />
+              A passionate and motivated Full-Stack Developer<br />
+              based in Burgas/Varna, Bulgaria. 📍<br />
+            </p>
+          </div>
+        </div>
+      
+        <NavBar />
+        <div className="section">
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="/addproject" element={<AddProject />} />
+        </Routes>
+          
+        </div>
+        
+
+      </div>
+    
   );
 }
 

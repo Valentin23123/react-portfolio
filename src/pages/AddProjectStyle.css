@@ -1,0 +1,149 @@
+.input {
+    color: #8707ff;
+    border: 2px solid #8707ff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    max-width: 190px;
+  }
+  
+  .input:active {
+    box-shadow: 2px 2px 15px #8707ff inset;
+  }
+
+  .password-input {
+    color: #8707ff;
+    border: 2px solid #8707ff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    max-width: 190px;
+  }
+  
+  .password-input:active {
+    box-shadow: 2px 2px 15px #8707ff inset;
+  }
+
+
+
+    .firstForm button {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #03045e;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+    cursor: pointer;
+   }
+   
+   .firstForm button::before,
+   button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+   .firstForm button::before {
+    left: -10px;
+    background: #240046;
+   }
+   
+   .firstForm button::after {
+    right: -10px;
+    background: #5a189a;
+   }
+   
+   .firstForm button:hover::before,
+   button:hover::after {
+    width: 58%;
+   }
+   
+   .firstForm button:hover span {
+    color: #e0aaff;
+    transition: 0.3s;
+   }
+   
+   .firstForm button span {
+    color: #03045e;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+   }
+
+
+.header
+{
+    text-shadow: 2px 2px 4px rgba(116, 8, 161, 0.7);
+}
+
+.addProject {
+    position: relative;
+  }
+  
+  .popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 100; 
+  }
+  
+  .popup {
+    background: rgb(128, 125, 125);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+ 
+  
+  .popup input,
+  .popup textarea,
+  .popup button {
+    
+    margin-bottom: 10px;
+    color:black;
+  }
+
+.addProject label{
+    color:black;
+}
+
+.error-message{
+    color:rgb(150, 25, 25);
+}
+
+.add-project-button 
+{
+    background-color: #6622be; 
+    color: #ffffff; 
+    border-radius: 10px; 
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.addProject
+{
+  margin-top:-50px;
+}
